@@ -1,7 +1,6 @@
 <?php
-require '../vendor/autoload.php';
-
-use Application\Hello;
+$nome = $_GET['nome'];
+$mensagem = "Boa noite $nome";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,7 +11,7 @@ use Application\Hello;
 </head>
 <body>
     <h1>PHP & Mysql</h1>
-    <p><?= Hello::message() ?></p>
+    <p><?= $message ?></p>
     <h1>Teste</h1>
 </body>
 </html>
